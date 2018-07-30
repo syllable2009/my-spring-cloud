@@ -44,7 +44,7 @@ spring:
   cloud:
     config:
       uri: http://127.0.0.1:8080
-      profile: ${spring.profiles.active:development} # 环境参数,获取配置中心不同文件命名的文件配置
+      profile: ${spring.profiles.active:dev} # 环境参数,获取配置中心不同文件命名的文件配置
       label: master
 
          
