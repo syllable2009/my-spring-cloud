@@ -26,7 +26,7 @@ spring:
 
 
 证明配置服务中心可以从远程程序获取配置信息。
-uri/application/* 可以看到加载信息
+uri/application/profiles 可以看到加载信息:profiles可用逗号隔开
 http请求地址和资源文件映射如下:
 /{application}/{profile}[/{label}]
 /{application}-{profile}.yml
