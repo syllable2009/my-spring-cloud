@@ -3,7 +3,7 @@ spring:
     name: abc-project
   cloud:
     config:
-      uri: https://github.com/syllable2009/my-spring-cloud
+      uri: https://github.com/syllable2009/my-spring-cloud/
       searchPaths: cloud-config-repo/abc-test
       profile: ${spring.profiles.active:dev}
       label: master
