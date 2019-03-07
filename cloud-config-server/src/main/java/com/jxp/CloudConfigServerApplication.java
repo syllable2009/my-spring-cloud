@@ -21,9 +21,9 @@ public class CloudConfigServerApplication implements CommandLineRunner {
         SpringApplication.run(CloudConfigServerApplication.class, args);
     }
 
-    @Value("app.domain")
+    @Value("${app.domain}")
     String domain;
-    @Value("app.id")
+    @Value("${app.id}")
     String appId;
 
     @GetMapping("/hello")

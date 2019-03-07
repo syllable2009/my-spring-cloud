@@ -5,11 +5,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/syllable2009/my-spring-cloud
+          uri: https://github.com/syllable2009/my-spring-cloud/
           skipSslValidation: true
+          username:
+          password:
         searchPaths: cloud-config-repo
-        profile: ${spring.profiles.active:dev}
+#        profile: ${spring.profiles.active:dev}
         label: master
-        overrides: true
+#        overrides: true
+
 server:
   port: 8040
+
+#app:
+#  id: 11111
+#  domain: 99999
