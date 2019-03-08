@@ -1,2 +1,5 @@
+spring:
+  application:
+    name: happy
 server:
   port: 8088
