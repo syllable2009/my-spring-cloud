@@ -1,7 +1,7 @@
 spring:
-  application:
+ application:
     name: config-server
-  cloud:
+ cloud:
     config:
       server:
         git:
@@ -12,4 +12,10 @@ spring:
           search-paths: cloud-config-repo
         profile: ${spring.profiles.active:dev}
         label: master
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/rs/eureka/
+
 
