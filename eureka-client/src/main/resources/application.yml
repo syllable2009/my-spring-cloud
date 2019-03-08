@@ -1,0 +1,12 @@
+server:
+  port: 8762
+  servlet:
+    context-path: /rc
+spring:
+  application:
+    name: service-api
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/rs/eureka/

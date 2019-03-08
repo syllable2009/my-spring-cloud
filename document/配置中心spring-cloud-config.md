@@ -11,3 +11,9 @@ Spring cloud使用git或svn存放配置文件，默认情况下使用git.
  
  入口类BootApplication启用@EnableConfigServer
  
+ 
+ 
+ 
+ 构建Config Server
+ 默认加载的配置是按这个bootstrap文件名来的,所以配置的信息放在bootstrap.yml中
+ 

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eurka-server
+server:
+  port: 8761
+  servlet:
+    context-path: /rs
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}${server.servlet.context-path}/eureka/
+ # \u81EA\u6211\u4FDD\u62A4\u6A21\u5F0F\u5173\u95ED
+  server:
+    enable-self-preservation: false

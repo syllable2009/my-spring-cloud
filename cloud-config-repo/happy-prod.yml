@@ -1,0 +1,4 @@
+app:
+  id: 123456-prod
+  domain: localhost-prod
+foo: wei-prod
