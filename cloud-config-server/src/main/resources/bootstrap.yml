@@ -10,6 +10,7 @@ spring:
           password:
           uri: https://github.com/syllable2009/my-spring-cloud/
           search-paths: cloud-config-repo
-        profile: ${spring.profiles.active:dev}
-        label: master
-
+server:
+  port: 8888
+  servlet:
+    context-path: /config
