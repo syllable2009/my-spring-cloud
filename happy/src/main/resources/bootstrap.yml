@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: config-client
+  profiles: ${spring.profiles.active:dev} #why this is must need and equals profile,otherwise can not change profile
+  cloud: # Setting up an Enabled Register config service
+    config:
+      discovery:
+        enabled: false
+        service-id: config-server #    config service register fetch config
+      url: localhost:8888  #if config on some server ip
+      profile: ${spring.profiles.active:dev}
+      label: master
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+health:
+  config:
+    enabled: true
+
+
