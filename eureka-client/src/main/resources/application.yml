@@ -4,7 +4,7 @@ server:
     context-path: /rc
 spring:
   application:
-    name: service-api
+    name: service-api #Eureka\u5B9E\u4F8B\u540D\uFF0C\u96C6\u7FA4\u4E2D\u6839\u636E\u8FD9\u91CC\u76F8\u4E92\u8BC6\u522B
 
 eureka:
   client:

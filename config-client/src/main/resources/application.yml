@@ -1,5 +1,16 @@
 spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
   application:
     name: happy
 server:
   port: 8088
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/rs/eureka/
+    fetch-registry: false
