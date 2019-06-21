@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-client
+    name: happy
   profiles: ${spring.profiles.active:dev} #why this is must need and equals profile,otherwise can not change profile
   cloud: # Setting up an Enabled Register config service
     config:
