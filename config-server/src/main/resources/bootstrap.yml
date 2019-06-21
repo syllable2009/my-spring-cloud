@@ -6,7 +6,7 @@ spring:
           uri: https://github.com/syllable2009/my-spring-cloud
 #          uri: https://gitee.com/pengjunlee/config-cloud.git
           default-label: master
-          search-paths: #'{application}-config'
+          search-paths: '{application}-config'
 #          clone-on-start: true
           basedir: target/config
 #          search-paths: /**
