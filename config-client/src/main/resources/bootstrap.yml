@@ -9,7 +9,7 @@ spring:
         enabled: true
         service-id: config-server
 #      url: localhost:1201  if config on some server ip
-      profile: ${spring.profiles.active:development}
+      profile: ${spring.profiles.active:dev}
       label: master
 
 eureka:

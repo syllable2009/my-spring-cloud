@@ -6,7 +6,7 @@ spring:
           uri: https://github.com/syllable2009/my-spring-cloud
 #          uri: https://gitee.com/pengjunlee/config-cloud.git
           default-label: master
-          search-paths: happy
+          search-paths: {application}-config
 #          username: 你的码云账号
 #          password: 你的账号密码
 
