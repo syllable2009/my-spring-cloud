@@ -5,10 +5,11 @@ spring:
         git:
           uri: https://github.com/syllable2009/my-spring-cloud
 #          uri: https://gitee.com/pengjunlee/config-cloud.git
-          default-label: master
-          search-paths: '{application}-config'
-          clone-on-start: false
-          basedir: target/config
+#          default-label: master
+#          search-paths: #'{application}-config'
+#          clone-on-start: true
+#          basedir: target/config
+#          search-paths: /**
 #          username: 你的码云账号
 #          password: 你的账号密码
 eureka:
