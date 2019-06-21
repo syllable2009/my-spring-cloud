@@ -1,13 +1,13 @@
 spring:
   application:
     name: config-client
-# Setting up an Enabled Register config service
-  cloud:
+  profiles:
+    active: prod
+  cloud: # Setting up an Enabled Register config service
     config:
-#    config service register fetch config
       discovery:
         enabled: true
-        service-id: config-server
+        service-id: config-server #    config service register fetch config
 #      url: localhost:1201  if config on some server ip
       profile: ${spring.profiles.active:dev}
       label: master
