@@ -3,12 +3,14 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/syllable2009/my-spring-cloud.git
-          search-paths: cloud-config-repo
-#          username:
-#          password:
+          uri: https://github.com/syllable2009/my-spring-cloud
+#          uri: https://gitee.com/pengjunlee/config-cloud.git
+          default-label: master
+          search-paths: happy
+#          username: 你的码云账号
+#          password: 你的账号密码
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/rs/eureka/
+      defaultZone: http://localhost:8761/eureka/
