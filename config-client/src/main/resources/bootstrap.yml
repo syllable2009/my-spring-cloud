@@ -1,17 +1,16 @@
 spring:
   application:
     name: config-client
-  profiles:
-    active: prod
+#  profiles:
+#    active: dev
   cloud: # Setting up an Enabled Register config service
     config:
       discovery:
-        enabled: true
+        enabled: false
         service-id: config-server #    config service register fetch config
-#      url: localhost:1201  if config on some server ip
+      url: localhost:8888  #if config on some server ip
       profile: ${spring.profiles.active:dev}
       label: master
-
 eureka:
   client:
     register-with-eureka: true
